@@ -3,6 +3,7 @@ import BottomNavbar from "../components/navbar/Bottom";
 import AppNavbar from "../components/navbar/App";
 import ScheduleCard from "../components/ScheduleCard";
 import TemplateDefault from "../components/template/default";
+import ArticleCard from "../components/ArticleCard";
 
 export default function Home() {
   return (
@@ -13,7 +14,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TemplateDefault>
-        <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6">
+        <section id="dashboard-card" className="p-4 bg-red-200 rounded-xl">
+          <div className="flex flex-col">
+            <span className="text-gray-700 text-xs md:text-lg">
+              Welcome back,
+            </span>
+            <span className="text-gray-700 text-3xl md:text-5xl">
+              Isa Achsanu
+            </span>
+          </div>
+        </section>
+        <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6 md:mt-12">
           Local Blood Drive
         </h1>
         <section id="local-blood-drive">
@@ -29,30 +40,24 @@ export default function Home() {
             location="Nama Lokasi 2"
             time="14 Desember 2022 08:00 - 16:00"
           />
-          <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
-          />
-          <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
-          />
-          <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
-          />
-          <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
-          />
-          <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
-          />
         </section>
-        <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6">
+        <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6 md:mt-12">
           Articles
         </h1>
+        <section id="article">
+          <ArticleCard
+            title="Judul Artikel 2"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem ligula, nec sollicitudin ..."
+          />
+          <ArticleCard
+            title="Judul Artikel 3"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem ligula, nec sollicitudin ..."
+          />
+          <ArticleCard
+            title="Judul Artikel 5"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem ligula, nec sollicitudin ..."
+          />
+        </section>
       </TemplateDefault>
     </>
   );
