@@ -4,6 +4,7 @@ import AppNavbar from "../components/navbar/App";
 import ScheduleCard from "../components/ScheduleCard";
 import TemplateDefault from "../components/template/default";
 import ArticleCard from "../components/ArticleCard";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
@@ -14,31 +15,49 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TemplateDefault>
-        <section id="dashboard-card" className="p-4 bg-red-200 rounded-xl">
+        <section id="dashboard-card" className="mb-4">
           <div className="flex flex-col">
-            <span className="text-gray-700 text-xs md:text-lg">
-              Welcome back,
-            </span>
-            <span className="text-gray-700 text-3xl md:text-5xl">
-              Isa Achsanu
+            <span className="text-gray-700 text-sm md:text-lg">Hi, Isa</span>
+            <span className="text-gray-700 text-2xl md:text-4xl">
+              Some quotes to motivate users, seriously.
             </span>
           </div>
         </section>
-        <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6 md:mt-12">
-          Local Blood Drive
-        </h1>
+        <section id="search-card" className="mb-4">
+          <div className="flex flex-row gap-2 items-center rounded-xl border-2 border-red-400 p-3">
+            <MagnifyingGlassIcon className="text-red-600 h-6 w-6 md:h-8 md:w-8" />
+            <input
+              className="w-full text-red-600 focus:outline-0"
+              placeholder="Search by City Name"
+            />
+          </div>
+        </section>
         <section id="local-blood-drive">
+          <h1 className="text-gray-700 text-xl md:text-3xl my-4 mt-6 md:mt-12">
+            Local Blood Drive
+          </h1>
+          <div className="flex flex-row gap-1">
+            <span className="text-xs rounded-xl bg-red-200 p-1 px-3">Today</span>
+            <span className="text-xs rounded-xl bg-white p-1 px-3">This Week</span>
+            <span className="text-xs rounded-xl bg-white p-1 px-3">This Month</span>
+          </div>
           <ScheduleCard
-            location="Nama Lokasi"
-            time="14 Desember 2022 08:00 - 16:00"
+            location="RS Bhayangkara"
+            month="Dec"
+            date="14"
+            time="08:00 - 16:00 WIB"
           />
           <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
+            location="Puskesmas Tlogosari"
+            month="Dec"
+            date="14"
+            time="08:00 - 16:00 WIB"
           />
           <ScheduleCard
-            location="Nama Lokasi 2"
-            time="14 Desember 2022 08:00 - 16:00"
+            location="Poltekkes Semarang"
+            month="Dec"
+            date="14"
+            time="08:00 - 16:00 WIB"
           />
         </section>
         <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6 md:mt-12">

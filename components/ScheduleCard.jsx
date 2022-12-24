@@ -3,13 +3,15 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export default function ScheduleCard(props) {
   return (
-    <div className="flex flex-row bg-red-200 rounded-2xl overflow-hidden mt-4 md:mt-8">
-      <div className="flex-1 flex flex-col p-4">
-        <span className="text-lg md:text-xl">{props.location}</span>
-        <span className="text-xs md:text-sm">{props.time}</span>
+    <div className="flex flex-row border-red-400 border-2 rounded-2xl overflow-hidden mt-4 md:mt-8">
+      <div className="relative flex flex-col items-center p-4">
+        <span className="text-base md:text-lg">{props.month}</span>
+        <span className="text-2xl md:text-2xl">{props.date}</span>
+        <div className="absolute top-0 bottom-0 h-2/4 md:h-3/5 my-auto left-full border-l-2 border-red-400"></div>
       </div>
-      <div className="flex items-center bg-red-400 p-4">
-        <ArrowRightIcon className="text-white h-6 w-6 md:h-8 md:w-8" />
+      <div className="flex-1 flex flex-col justify-center bg-white p-4">
+        <span className="text-xs md:text-base">{props.time}</span>
+        <span className="text-lg md:text-2xl">{props.location}</span>
       </div>
     </div>
   );
@@ -17,5 +19,7 @@ export default function ScheduleCard(props) {
 
 ScheduleCard.propTypes = {
   location: PropTypes.string.isRequired,
+  month: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
 };
