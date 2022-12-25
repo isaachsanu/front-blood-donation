@@ -7,7 +7,7 @@ export default function ScheduleCard(props) {
       <div className="relative flex flex-col items-center p-4">
         <span className="text-base md:text-lg">{props.month}</span>
         <span className="text-2xl md:text-2xl">{props.date}</span>
-        <div className="absolute top-0 bottom-0 h-2/4 md:h-3/5 my-auto left-full border-l-2 border-red-400"></div>
+        <div className="absolute top-0 bottom-0 h-2/4 my-auto left-full border-l-2 border-red-400"></div>
       </div>
       <div className="flex-1 flex flex-col justify-center bg-white p-4">
         <span className="text-xs md:text-base">{props.time}</span>
