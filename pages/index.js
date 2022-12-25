@@ -37,9 +37,15 @@ export default function Home() {
             Local Blood Drive
           </h1>
           <div className="flex flex-row gap-1">
-            <span className="text-xs rounded-xl bg-red-200 p-1 px-3">Today</span>
-            <span className="text-xs rounded-xl bg-white p-1 px-3">This Week</span>
-            <span className="text-xs rounded-xl bg-white p-1 px-3">This Month</span>
+            <span className="text-xs rounded-xl bg-red-200 p-1 px-3">
+              Today
+            </span>
+            <span className="text-xs rounded-xl bg-white p-1 px-3">
+              This Week
+            </span>
+            <span className="text-xs rounded-xl bg-white p-1 px-3">
+              This Month
+            </span>
           </div>
           <ScheduleCard
             location="RS Bhayangkara"
@@ -60,21 +66,21 @@ export default function Home() {
             time="08:00 - 16:00 WIB"
           />
         </section>
-        <h1 className="text-gray-700 text-3xl md:text-5xl my-4 mt-6 md:mt-12">
-          Articles
-        </h1>
         <section id="article">
+          <h1 className="text-gray-700 text-xl md:text-3xl my-4 mt-6 md:mt-12">
+            Articles
+          </h1>
           <ArticleCard
-            title="Judul Artikel 2"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem ligula, nec sollicitudin ..."
+            title="Judul Artikel Yang Harusnya Lebih Panjang"
+            desc="Lorem ipsum dolor sit amet, ..."
           />
           <ArticleCard
-            title="Judul Artikel 3"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem ligula, nec sollicitudin ..."
+            title="Judul Artikel Yang Harusnya Lebih Panjang"
+            desc="Lorem ipsum dolor sit amet, ..."
           />
           <ArticleCard
-            title="Judul Artikel 5"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem ligula, nec sollicitudin ..."
+            title="Judul Artikel Yang Harusnya Lebih Panjang"
+            desc="Lorem ipsum dolor sit amet, ..."
           />
         </section>
       </TemplateDefault>

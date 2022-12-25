@@ -8,7 +8,7 @@ export default function AppNavbar(props) {
   return (
     <div
       className={
-        "transition-all duration-300 my-container mx-auto fixed w-full flex flex-row p-4 " +
+        "transition-all duration-300 z-50 bg-white my-container mx-auto fixed w-full flex flex-row p-4 " +
         (nav.isShowNavigation ? "top-0" : "-top-24")
       }
     >

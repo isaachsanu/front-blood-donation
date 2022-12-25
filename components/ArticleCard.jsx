@@ -1,15 +1,27 @@
 import PropTypes from "prop-types";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import { ClockIcon } from "@heroicons/react/24/outline";
 
 export default function ArticleCard(props) {
   return (
-    <div className="flex flex-col gap-2 bg-red-200 rounded-2xl overflow-hidden p-4 mt-4 md:mt-8">
-      <span className="text-lg md:text-xl">{props.title}</span>
-      <span className="text-xs md:text-sm">{props.desc}</span>
-      <button className="flex flex-row gap-1.5 justify-center text-white bg-red-400 p-2 rounded-lg mt-2">
-        <span className="text-xs md:text-sm">Read More</span>
-        <ArrowRightIcon className="h-4 w-4 md:h-6 md:w-6" />
-      </button>
+    <div className="flex flex-col gap-2 overflow-hidden mt-6 md:mt-12">
+      <span className="text-xs md:text-sm text-red-400">Kategori #1</span>
+      <div className="flex flex-row gap-2 justify-between">
+        <div className="flex flex-col gap-2">
+          <span className="text-lg md:text-xl">{props.title}</span>
+          <div className="flex flex-row gap-1 md:gap-2 text-gray-400">
+            <ClockIcon className=" h-4 w-4 md:h-6 md:w-6" />
+            <span className="text-xs md:text-sm ">24 hours ago</span>
+          </div>
+        </div>
+        <div>
+          <img
+            className="object-cover w-36 h-20 rounded-xl"
+            src="/xx5z7tz9.bmp"
+          />
+        </div>
+      </div>
     </div>
   );
 }

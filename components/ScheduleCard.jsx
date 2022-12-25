@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
 export default function ScheduleCard(props) {
   return (
@@ -12,6 +12,9 @@ export default function ScheduleCard(props) {
       <div className="flex-1 flex flex-col justify-center bg-white p-4">
         <span className="text-xs md:text-base">{props.time}</span>
         <span className="text-lg md:text-2xl">{props.location}</span>
+      </div>
+      <div className="flex flex-row items-center p-4">
+        <ArrowRightCircleIcon className="text-red-600 h-8 w-8" />
       </div>
     </div>
   );
