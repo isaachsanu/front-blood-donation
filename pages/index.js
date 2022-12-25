@@ -2,7 +2,7 @@ import Head from "next/head";
 import BottomNavbar from "../components/navbar/Bottom";
 import AppNavbar from "../components/navbar/App";
 import ScheduleCard from "../components/ScheduleCard";
-import TemplateDefault from "../components/template/default";
+import TemplateDefault from "../components/template/Default";
 import ArticleCard from "../components/ArticleCard";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
