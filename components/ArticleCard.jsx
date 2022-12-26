@@ -5,14 +5,14 @@ import { ClockIcon } from "@heroicons/react/24/outline";
 
 export default function ArticleCard(props) {
   return (
-    <div className="flex flex-col gap-2 overflow-hidden mt-6 md:mt-12">
-      <span className="text-xs md:text-sm text-red-400">Kategori #1</span>
+    <div className="flex flex-col gap-2 overflow-hidden mb-4 md:mb-6">
+      <span className="text-xs md:text-sm text-red-400">Pengumuman</span>
       <div className="flex flex-row gap-2 justify-between">
         <div className="flex flex-col gap-2">
           <span className="text-lg md:text-xl">{props.title}</span>
           <div className="flex flex-row gap-1 md:gap-2 text-gray-400">
-            <ClockIcon className=" h-4 w-4 md:h-6 md:w-6" />
-            <span className="text-xs md:text-sm ">24 hours ago</span>
+            <ClockIcon className="h-4 w-4" />
+            <span className="text-xs">24 hours ago</span>
           </div>
         </div>
         <div>

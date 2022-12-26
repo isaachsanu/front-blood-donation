@@ -10,19 +10,11 @@ export default function TemplateDefault(props) {
       <ScrollHandler />
       <div className="relative min-h-screen my-container mx-auto bg-white">
         <AppNavbar
-          appbarLeft={
-            <>
-              <Bars2Icon className="text-red-600 h-6 w-6 md:h-8 md:w-8" />
-              {/* <span className="text-md md:text-lg ml-4 text-red-600">
-                Search
-              </span> */}
-            </>
-          }
-          appbarRight={
-            <UserCircleIcon className="text-red-600 h-6 w-6 md:h-8 md:w-8" />
-          }
+          appbarLeft={props.appBarLeft}
+          appbarRight={props.appBarRight}
         />
-        <div className="relative top-12 md:top-16 p-4">{props.children}</div>
+        {props.withAppBarSpace && <div className="h-12 md:h-16">&nbsp;</div>}
+        <div className="relative p-4">{props.children}</div>
         <BottomNavbar />
       </div>
     </NavigationProvider>
