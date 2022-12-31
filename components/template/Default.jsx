@@ -13,8 +13,12 @@ export default function TemplateDefault(props) {
           appbarLeft={props.appBarLeft}
           appbarRight={props.appBarRight}
         />
-        {props.withAppBarSpace && <div className="h-12 md:h-16">&nbsp;</div>}
-        <div className="relative p-4">{props.children}</div>
+        {props.withAppBarSpace ? (
+          <div className="h-12 md:h-16 bg-white">&nbsp;</div>
+        ) : (
+          <div className="absolute z-10 top-0 w-full h-12 md:h-16 bg-gradient-to-b from-white via-[rgba(255,255,255,0.7)] to-[rgba(255,255,255,0.05)]">&nbsp;</div>
+        )}
+        <div className="p-4">{props.children}</div>
         <BottomNavbar />
       </div>
     </NavigationProvider>

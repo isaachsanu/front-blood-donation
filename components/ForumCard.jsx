@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
-import { ChatBubbleBottomCenterTextIcon, HandThumbUpIcon } from "@heroicons/react/24/outline";
+import { ChatBubbleBottomCenterTextIcon, HandThumbUpIcon } from "@heroicons/react/24/solid";
 
 export default function ForumCard(props) {
   return (
@@ -19,12 +19,12 @@ export default function ForumCard(props) {
         <div className="text-xl md:text-2xl mt-2">{props.author_post}</div>
         <div className="flex flex-row mt-2">
           <div className="basis-1/2 flex flex-row gap-1 md:gap-2 justify-center items-center">
-            <ChatBubbleBottomCenterTextIcon className="text-gray-500 h-4 w-4" />
-            <span className="text-gray-500 text-lg">2</span>
+            <ChatBubbleBottomCenterTextIcon className="text-red-500 h-4 w-4" />
+            <span className="text-red-500 text-lg">2</span>
           </div>
           <div className="basis-1/2 flex flex-row gap-1 md:gap-2 justify-center items-center">
-            <HandThumbUpIcon className="text-gray-500 h-4 w-4" />
-            <span className="text-gray-500 text-lg">125</span>
+            <HandThumbUpIcon className="text-red-500 h-4 w-4" />
+            <span className="text-red-500 text-lg">125</span>
           </div>
         </div>
       </div>
